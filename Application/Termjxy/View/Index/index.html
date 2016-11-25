@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>内容</h1> <br>
+{$val}
+<a href="__MODULE__/Exam/index">点我</a>
+<button id="test">ajax 跳转</button>
+
+<script src="__PUBLIC__/js/jquery.js"></script>
+<script>
+    $(function () {
+
+        // 完整的ajax 示例
+        $('#test').click(function () {
+            $.ajax({
+                url: '__MODULE__/Exam/test',
+                data: {"test": 'oops'},
+                type: 'POST',
+                dataType: 'json',
+                success: function (result) {
+                    alert('got it, value is : ' + result);
+                },
+                error: function () {
+                    alert('Error loading PHP document');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
