@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="ed47aee6-fdf6-48f2-b7d7-f62b11a69cfd" name="base" url="http://www.hank.cn">
-        <fileTransfer host="192.168.0.109" port="21" rootFolder="/home/wwwroot/www.hank.cn">
+      <webServer id="ed47aee6-fdf6-48f2-b7d7-f62b11a69cfd" name="thinkphplearn" url="http://192.168.1.201/tplearn">
+        <fileTransfer host="192.168.1.201" port="21" rootFolder="/home/wwwroot/default">
           <advancedOptions>
             <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>
